@@ -8,8 +8,9 @@ class JedisHelper implements Serializable {
     def pool
     def connstr
 
-    def JedisHelper(script) {
+    def JedisHelper(script, connstr) {
         this.script = script
+        this.connstr = connstr
         pool = new JedisPool(new JedisPoolConfig(), connstr);
     }
 
