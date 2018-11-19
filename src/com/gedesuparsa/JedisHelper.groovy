@@ -3,7 +3,7 @@ package com.gedesuparsa
 @Grab('redis.clients:jedis:2.1.0')
 import redis.clients.jedis.*
 
-class JedisHelper implements Serializable {
+class JedisHelper {
     def script
     def pool
     def connstr
