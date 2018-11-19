@@ -8,7 +8,6 @@ class JedisHelper implements Serializable {
     def pool
     def connstr
 
-    @NonCPS
     def JedisHelper(script, connstr) {
         this.script = script
         this.connstr = connstr
